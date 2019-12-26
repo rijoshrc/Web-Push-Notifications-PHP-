@@ -7,9 +7,10 @@
     "notifications",
     "web",
     "WebPush",
-    "Push API",
+    "service worker push notification",
     "PHP",
-    "Service Worker"
+    "Service Worker",
+    "PushManager"
   ],
   "require": {
     "php": "^7.1",
