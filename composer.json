@@ -1,0 +1,18 @@
+{
+  "name": "php-service-worker-push-notification",
+  "type": "library",
+  "description": "Web Push library for PHP",
+  "keywords": [
+    "push",
+    "notifications",
+    "web",
+    "WebPush",
+    "Push API",
+    "PHP",
+    "Service Worker"
+  ],
+  "require": {
+    "php": "^7.1",
+    "minishlink/web-push": "^5.2"
+  }
+}

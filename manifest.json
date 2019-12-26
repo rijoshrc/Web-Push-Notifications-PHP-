@@ -1,0 +1,45 @@
+{
+    "short_name": "service worker push notification",
+    "name": "service worker push notification",
+    "theme_color": "#2196F3",
+    "background_color": "#2196F3",
+    "display": "standalone",
+    "permissions": [
+        "background"
+    ],
+    "icons": [
+        {
+            "src": "/sw-icons/android-launchericon-48-48.png",
+            "type": "image/png",
+            "sizes": "48x48"
+        },
+        {
+            "src": "/sw-icons/android-launchericon-72-72.png",
+            "type": "image/png",
+            "sizes": "72x72"
+        },
+        {
+            "src": "/sw-icons/android-launchericon-96-96.png",
+            "type": "image/png",
+            "sizes": "96x96"
+        },
+        {
+            "src": "/sw-icons/android-launchericon-144-144.png",
+            "type": "image/png",
+            "sizes": "144x144"
+        },
+        {
+            "src": "/sw-icons/android-launchericon-192-192.png",
+            "type": "image/png",
+            "sizes": "192x192"
+        },
+        {
+            "src": "/sw-icons/android-launchericon-512-512.png",
+            "type": "image/png",
+            "sizes": "512x512"
+        }
+    ],
+    "start_url": "/",
+    "orientation": "portrait",
+    "gcm_sender_id": "996072763267"
+}
