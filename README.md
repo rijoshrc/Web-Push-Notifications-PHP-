@@ -27,6 +27,38 @@ Use [composer](https://getcomposer.org/) to download and install the library and
 - Go to the browser application tab to see the service worker file is registered. You can check the working by clicking the `Push` button in this section.
 - Click the `Get notification` link to get the subscription. Copy the subscription data from the textarea.
 - Send the subscription data to http://localhost/php-service-worker-push-notification/trigger using [postman](https://www.getpostman.com/). Use `POST` method and send as `form-data` by assigning to the key `subscription`.
+---
+##### VAPID
+- Use [this](https://web-push-codelab.glitch.me/) link to generate the demo VAPIDs.
+- Copy the `public  key` and `private key` and paste it in the code.
+- These VAPIDs has limitations and can use only for testing purpose.
+ 
+*trigger.php*
+``` 
+    $auth = array(
+                'VAPID' => array(
+                    'subject' => 'http://localhost:8887/',
+                    'publicKey' => 'YOUR_PUBLIC_KEY',
+                    'privateKey' => 'YOUR _PRIVATE_KEY',
+                ),
+            );
+``` 
+ *handler.js*
+ ```
+    const PUBLIC_KEY = YOUR_PUBLIC_KEY;
+```
+*sw.js*
+```
+    const applicationServerPublicKey = YOUR_PUBLIC_KEY;
+```
+
+#### Generate VAPIDs from [Google Firebase](https://firebase.google.com/)
+1. Login/Sign up to the [Google Firebase](https://firebase.google.com/)
+1. Go to the [console](https://console.firebase.google.com/) and create new project.
+1. Go to the Project settings. (Click the settings icon on the right side of the `Project overview` button to see the `Project settings` option)
+1. Navigate to the `Cloud Messaging` tab and find the keys from `Web configuration` section.
+1. Replace all the demo keys in the code and start working.
+
 
 ## References
 - https://developers.google.com/web/fundamentals/codelabs/push-notifications

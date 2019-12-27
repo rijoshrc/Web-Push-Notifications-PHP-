@@ -7,6 +7,7 @@
 const subscribeButton = document.getElementById('subscribe');
 const unsubscribeButton = document.getElementById('unsubscribe');
 const subscriptionTextarea = document.getElementById('subscription');
+const PUBLIC_KEY = 'BOwAikTNwh3JmmrXz7DHsclNkD8xlviX30LdCdrBFmpVI6bDVncfQFaBuR0J2UKishaQ-XldL_5cwxCYevRbq_I';
 
 /**
  * The functionality will work if the browser supports both the service worker and push manager.
@@ -88,7 +89,7 @@ function subscribe(event) {
         registration.pushManager.subscribe({
             userVisibleOnly: true, //Always show notification when received
             applicationServerKey: urlBase64ToUint8Array(
-                'BOwAikTNwh3JmmrXz7DHsclNkD8xlviX30LdCdrBFmpVI6bDVncfQFaBuR0J2UKishaQ-XldL_5cwxCYevRbq_I'
+                PUBLIC_KEY
             )
         })
             .then(function (subscription) {
