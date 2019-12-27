@@ -1,4 +1,4 @@
-# PHP-ServiceWorker push notification
+# PHP-ServiceWorker push notification (Implementation of [web-push-php](https://github.com/web-push-libs/web-push-php) package)
 A service worker can handle push notifications that can be shown even when the browser tab or the browser itself is closed. Implementing this using PHP, JS and HTML require a third party service. The plugin [web-push-php](https://github.com/web-push-libs/web-push-php) can help this to happen. Clone the directory to your localhost area and check how it can be implemented.
 
 ## Requirements
