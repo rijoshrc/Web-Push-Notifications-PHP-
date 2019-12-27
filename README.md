@@ -24,8 +24,8 @@ Use [composer](https://getcomposer.org/) to download and install the library and
 ## Usage
 
 - Click Allow button if the browser show permission prompt.
-- Go the browser application tab to see the service worker file is registered. You can check the working by clicking the ```Push``` button in this section.
-- Click the `Get notification` link to get the subscription. Copy the subscription data from the textbox.
+- Go to the browser application tab to see the service worker file is registered. You can check the working by clicking the `Push` button in this section.
+- Click the `Get notification` link to get the subscription. Copy the subscription data from the textarea.
 - Send the subscription data to http://localhost/php-service-worker-push-notification/trigger using [postman](https://www.getpostman.com/). Use `POST` method and send as `form-data` by assigning to the key `subscription`.
 
 ## References
